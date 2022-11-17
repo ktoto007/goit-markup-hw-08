@@ -1,0 +1,83 @@
+.portfolio-list{
+  @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+  }
+}
+.portfolio-list__item {
+  padding-bottom: 0;
+  background-color: $main-bg-color;
+  box-shadow: none;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    margin-bottom: 30px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: 768px){
+    width: calc(100% / 2 - 15px);
+  }
+
+  @media screen and (min-width: 1200px){
+    width: calc(100% / 3 - 20px);
+  }
+}
+.card__container {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.card__container-focused{
+  position: absolute;
+  padding: 63px 24px;
+  width: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transition: transform $time $cubic;
+  .link:hover &,
+  .link:focus & {
+      transform: translateY(-100%);
+    }
+}
+
+.card__text--focused {
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: $hero-color;
+}
+
+.card__section {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  color: $main-color;
+}
+
+.card__text {
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: $paragraf-color;
+}
+
+.card__link {
+  display: block;
+  transition: box-shadow $time $cubic;
+  &:hover,
+  &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}

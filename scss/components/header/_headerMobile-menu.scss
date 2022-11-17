@@ -12,6 +12,7 @@
     overflow: auto;
     width: 100vw;
     height: 100vh;
+    z-index: 999;
     padding: 40px 48px;
     background-color: $main-bg-color;
     transform: translateX(100%);
