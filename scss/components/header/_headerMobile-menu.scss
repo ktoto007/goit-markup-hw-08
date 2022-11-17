@@ -59,7 +59,7 @@
 .mobile-menu_nav-link{
     font-weight: 500;
     font-size: 40px;
-    line-height: 47px;
+    line-height: 1.18;
     letter-spacing: 0.02em;
     color: $main-color;
     transition: color $time $cubic;
@@ -76,7 +76,7 @@
 .mobile-menu__tel{
     font-weight: 500;
     font-size: 34px;
-    line-height: 40px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     color: $accent-color;
 }
@@ -84,7 +84,7 @@
 .mobile-menu__mail{
     font-weight: 500;
     font-size: 24px;
-    line-height: 28px;
+    line-height: 1.16;
     letter-spacing: 0.02em;
     color: $paragraf-color;
 }
@@ -108,7 +108,7 @@
     font-family: $main-text;
     font-weight: 500;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 1.22;
     letter-spacing: 0.02em;
     color: $accent-color;
 }
