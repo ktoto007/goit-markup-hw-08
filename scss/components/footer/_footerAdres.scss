@@ -1,0 +1,39 @@
+.footer-adres-container {
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px; 
+  }
+}
+.footer__logo {
+  margin-right: 0;
+}
+
+.footer-adres {
+  margin-top: 20px;
+}
+.footer-adres__item {
+  margin-bottom: 9px;
+  &:last-child {
+      margin-bottom: 0;
+    }
+}
+
+.footer-adres__link {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $paragraf-color;
+  transition: color $time $cubic;
+  &:hover,
+  &:focus {
+      color: $accent-color;
+    }
+}
+
+.footer-adres__link--second-color {
+  color: $hero-color;
+}
