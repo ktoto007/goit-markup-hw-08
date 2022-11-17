@@ -1,7 +1,8 @@
 @import "./utils/variables";
 @import "./utils/mainPageStyle";
 @import "./utils/backdrop";
-
+//Хедер
+@import "./components/header";
 //Секция героя
 @import "./components/hero";
 //Секция с преимуществами
@@ -13,5 +14,5 @@
 @import "./components/teamSocialLinks";
 //Секция с клиентами
 @import "./components/clients";
-//
+//Футер
 @import "./components/footer"

@@ -19,9 +19,9 @@
     <header class="header">
       <div class="container header__container">
         <nav class="nav">
-          <a href="./index.html" class="logo link" lang="en">
-            <span class="logo__primary">Web</span>
-            <span class="logo__secondary">Studio</span>
+          <a href="./index.html" class="logo header-logo link" lang="en">
+            <span class="logo__primary">Web</span
+            ><span class="logo__secondary">Studio</span>
           </a>
           <ul class="site-nav list">
             <li class="site-nav__item">
@@ -58,6 +58,60 @@
             >
           </li>
         </ul>
+
+        <button type="button" class="header-button js-open-menu">
+          <svg width="40" height="40">
+            <use href="./images/symbol-defs.svg#headerMenu"></use>
+          </svg>
+        </button>
+
+        <div class="mobile-menu js-menu-container">
+          <button type="button" class="mobile-menu-button js-close-menu">
+            <svg width="40" height="40">
+              <use href="./images/symbol-defs.svg#close"></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu__nav list">
+            <li class="mobile-menu__item">
+              <a href="" class="mobile-menu_nav-link link">Studio</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="" class="mobile-menu_nav-link link">Portfolio</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="" class="mobile-menu_nav-link link"> Contacts</a>
+            </li>
+          </ul>
+
+          <ul class="mobile-menu__connection list">
+            <li class="mobile-menu__item">
+              <a href="+1 212-772-4150" class="mobile-menu__tel link"
+                >+1 212-772-4150</a
+              >
+            </li>
+            <li class="mobile-menu__item">
+              <a href="info@devstudio.com" class="mobile-menu__mail link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="header-social-links list">
+            <li class="header-social-link__item">
+              <a href="" class="header-social-links-link link">Instagram</a>
+            </li>
+            <li class="header-social-link__item">
+              <a href="" class="header-social-links-link link">Twitter</a>
+            </li>
+            <li class="header-social-link__item">
+              <a href="" class="header-social-links-link link">Facebook</a>
+            </li>
+            <li class="header-social-link__item">
+              <a href="" class="header-social-links-link link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -546,6 +600,7 @@
       </div>
     </div>
 
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

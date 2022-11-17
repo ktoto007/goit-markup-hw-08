@@ -1,0 +1,43 @@
+.connection {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    @media screen and (min-width: 1200px) {
+      display: flex;
+    }
+}
+.connection__item {
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}
+
+.connection__link {
+  display: flex;
+  align-items: center;
+  color: $paragraf-color;
+  fill: $paragraf-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  transition: color v$time $cubic;
+  &:hover,
+  &:focus{
+    color: $accent-color;
+    fill: $accent-color;
+  }
+}
+
+.connection__icon {
+  margin-right: 10px;
+  transition: fill $time $cubic;
+  &:hover,
+  &:focus{
+    color: $accent-color;
+    fill: $accent-color;
+  }
+}

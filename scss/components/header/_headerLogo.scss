@@ -1,0 +1,21 @@
+.logo {
+    font-family: $additional-text, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    @media screen and (max-width: 767px) {
+        margin-right: 276px;
+    }
+    @media screen and (min-width: 768px) {
+        margin-right: 93px;
+    }
+}
+  .logo__primary {
+    color: $accent-color;
+  }
+  .logo__secondary {
+    color: #000000;
+  }
+    
+  
