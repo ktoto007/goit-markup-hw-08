@@ -365,36 +365,36 @@ img {
 @media screen and (max-width: 767px) {
   .hero {
     max-width: 480px;
-    background-image: url(../images/heroMobile.jpg);
+    background-image: url(../../images/heroMobile.jpg);
     background-size: 480px 400px;
   }
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero .box {
-    background-image: url("../images/heroMobile@2.jpg");
+    background-image: url("../../images/heroMobile@2.jpg");
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
-    background-image: url(../images/heroTabl.jpg);
+    background-image: url(../../images/heroTabl.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero .box {
-    background-image: url("../images/heroTabl@2.jpg");
+    background-image: url("../../images/heroTabl@2.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     padding: 200px 0;
     max-width: 1600px;
-    background-image: url(../images/heroDesk.jpg);
+    background-image: url(../../images/heroDesk.jpg);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero .box {
-    background-image: url("../images/heroMobile@2.jpg");
+    background-image: url("../../images/heroMobile@2.jpg");
   }
 }
 
