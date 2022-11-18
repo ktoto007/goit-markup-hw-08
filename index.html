@@ -59,13 +59,18 @@
           </li>
         </ul>
 
-        <button type="button" class="header-button js-open-menu">
+        <button
+          type="button"
+          class="header-button js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg width="40" height="40">
             <use href="./images/symbol-defs.svg#headerMenu"></use>
           </svg>
         </button>
 
-        <div class="mobile-menu js-menu-container">
+        <div class="mobile-menu js-menu-container" id="mobile-menu">
           <button type="button" class="mobile-menu-button js-close-menu">
             <svg width="40" height="40">
               <use href="./images/symbol-defs.svg#close"></use>
@@ -191,6 +196,8 @@
             <li class="aside__item">
               <div class="aside-container">
                 <img
+                  srcset="image1.jpg 370w, image1@2x.jpg 740w"
+                  sizes="25vw"
                   src="./images/image1.jpg"
                   alt="Людина пише код"
                   width="370"
@@ -203,6 +210,8 @@
             <li class="aside__item">
               <div class="aside-container">
                 <img
+                  srcset="image2.jpg 370w, image2@2x.jpg 740w"
+                  sizes="25vw"
                   src="./images/image2.jpg"
                   alt="Людина тримає телефон та щось робить в ноутбуці"
                   width="370"
@@ -215,6 +224,8 @@
             <li class="aside__item">
               <div class="aside-container">
                 <img
+                  srcset="image3.jpg 370w, image3@2x.jpg 740w"
+                  sizes="25vw"
                   src="./images/image3.jpg"
                   alt="Людина тримає планшет на єкрані якого палітра кольорів"
                   width="370"
@@ -235,6 +246,11 @@
             <li class="team-section__item">
               <img
                 class="team-section__img"
+                srcset="product-designer.jpg w270,
+                product-designer@2x.jpg w540, 
+                product-designer@3x.jpg w810, 
+                product-designer@3.jpg w1080"
+                sizes="(min-width: 1200px) 270px,(min-width:768px) 354px, 450px"
                 src="./images/product-designer.jpg"
                 alt="Ігор Дем'яненко Продакт дезайнер"
                 width="270"
@@ -275,6 +291,11 @@
             <li class="team-section__item">
               <img
                 class="team-section__img"
+                srcset="frontend-developer.jpg w270,
+                frontend-developer@2x.jpg w540, 
+                frontend-developer@3x.jpg w810, 
+                frontend-developer@3.jpg w1080"
+                sizes="(min-width: 1200px) 270px,(min-width:768px) 354px, 450px"
                 src="./images/frontend-developer.jpg"
                 alt="Ольга Рєпіна Фронтенд девелопер"
                 width="270"
@@ -315,6 +336,11 @@
             <li class="team-section__item">
               <img
                 class="team-section__img"
+                srcset="mykola.jpg w270,
+                mykola@2x.jpg w540, 
+                mykola@3x.jpg w810, 
+                mykola@3.jpg w1080"
+                sizes="(min-width: 1200px) 270px,(min-width:768px) 354px, 450px"
                 src="./images/mykola.jpg"
                 alt="Микола Тарасов Маркетинг"
                 width="270"
@@ -355,6 +381,11 @@
             <li class="team-section__item">
               <img
                 class="team-section__img"
+                srcset="ul-designer.jpg w270,
+                ul-designer@2x.jpg w540, 
+                ul-designer@3x.jpg w810, 
+                ul-designer@3.jpg w1080"
+                sizes="(min-width: 1200px) 270px,(min-width:768px) 354px, 450px"
                 src="./images/ul-designer.jpg"
                 alt="Михайло Єрмаков  Ул дизайнер"
                 width="270"
@@ -604,6 +635,12 @@
       </div>
     </div>
 
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>

@@ -6,15 +6,43 @@
     @media screen and (max-width: 767px) {
         max-width: 480px;
         background-image: url(../../images/heroMobile.jpg);
+        background-size: 480px 400px;
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (-o-min-device-pixel-ratio: 2/1),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .box {
+          background-image: url('../../images/heroMobile@2.jpg');
+        }
+      }
     }
     @media screen and (min-width: 768px) {
         max-width: 768px;
         background-image: url(../../images/heroTabl.jpg);
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (-o-min-device-pixel-ratio: 2/1),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .box {
+          background-image: url('../../images/heroTabl@2.jpg');
+        }
+      }
     }
     @media screen and (min-width: 1200px) {
         padding: 200px 0;
         max-width: 1600px;
         background-image: url(../../images/heroDesk.jpg);
+        @media (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (-o-min-device-pixel-ratio: 2/1),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .box {
+          background-image: url('../../images/heroMobile@2.jpg');
+        }
+      }
     }
 }
 
