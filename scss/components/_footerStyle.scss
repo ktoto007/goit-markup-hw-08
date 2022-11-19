@@ -4,11 +4,17 @@
 }
 
 .footer__container--tablet{
-  @media screen and (min-width: 768px) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px)  {
     display: flex;
     align-items: baseline;    
     margin-bottom: 60px;
-    justify-content: space-evenly;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
   }
 }
 
